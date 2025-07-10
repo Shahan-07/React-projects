@@ -83,6 +83,8 @@ const Hero = () => {
                     </div>
                     <div className='flex-1 w-full'>
                                 <div className='relative'>
+                                    <div className='absolute -inset-0.5 bg-gradient-to-r  from-amber-500 to-indigo-900 rounded-2xl blur-xl opacity-50 animate-pulse'>
+                                    </div>
                                     <div className='relative bg-white dark:bg-neutral-900 p-4 lg:p-5 xl:p-6 rounded-2xl shadow-2xl border border-neutral-200 dark:border-neutral-800'>
                                         <div className='flex items-center justify-between mb-3 lg:mb-4'>
                                             <div className='flex items-center gap-2'>
@@ -109,14 +111,31 @@ const Hero = () => {
                                         </div>
                                         <div className='mt-3 lg:mt-4 flex justify-between items-center'>
                                             <div className='flex gap-2'>
-                                                <span>
-                                                    
+                                                <span className='px-2.5 py-1 lg:px-3 rounded-full bg-neutral-900 text-amber-400 text-xs font-medium flex items-center'>
+                                                    <i className='bxr bx-code mr-1'></i> Tailwind v4
+                                                </span>
+                                                <span className='px-2.5 py-1 lg:px-3 rounded-full bg-neutral-100 dark:bg-neutral-800 text-indigo-900 dark:text-indigo-400 border border-neutral-200 dark:border-neutral-700 text-xs font-medium flex items-center'>
+                                                    <i className='bxr bx-code-alt mr-1'></i> React
                                                 </span>
                                             </div>
+                                            <button className='w-8 h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 flex items-center justify-center rounded-full bg-amber-500 text-neutral-900 hover:bg-amber-600 transition'>
+                                                <i className='bx bx-copy text-sm '></i>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
                     </div>
+                </div>
+            </div>
+            <div className='hidden md:block absolute bottom-8 left-8 lg:bottom-10 lg:left-10 animate-bounce'>
+                <div className='bg-neutral-900 text-white px-2.5 py-1.5 rounded-lg text-sm lg:text-sm  flex items-center shadow-lg'>
+                    <i className='bx bx-check-circle mr-1 text-amber-500'></i> Responsive
+                </div>
+            </div>
+
+            <div className='hidden md:block absolute top-16 right-[15%] lg:top-20 lg:right-[20%] animate-bounce delay-300'>
+                <div className='bg-neutral-900 text-white px-2.5 py-1.5 rounded-lg text-sm lg:text-sm  flex items-center shadow-lg'>
+                    <i className='bx bx-check-circle mr-1 text-amber-500'></i> Accessible
                 </div>
             </div>
         </div>
