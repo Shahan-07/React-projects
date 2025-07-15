@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+}
+span{
+    font-size: 50px;
+    cursor: pointer;
+}
+.colored{
+    color: rgb(255, 128, 0);
+}
+.uncolored{
+    color: black;
+}
